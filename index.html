@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function to display the message if it's Saturday or Sunday
+function checkFunDay() {
+    // Get the current date
+    const today = new Date();
+    
+    // Get the day of the week (0 for Sunday, 6 for Saturday)
+    const dayOfWeek = today.getDay();
+    
+    // Check if it's Saturday (6) or Sunday (0)
+    if (dayOfWeek === 0 || dayOfWeek === 6) {
+        document.write("It's Fun day");
+        // If you're running this in a web environment, you might use alert instead:
+        // alert("It's Fun day");
+    }
+}
+
+// Call the function to check the day and display the message
+checkFunDay();
+
+    </script>
+</body>
+</html>
